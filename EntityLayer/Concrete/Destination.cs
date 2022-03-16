@@ -14,7 +14,7 @@ namespace EntityLayer.Concrete
 
         public string City { get; set; }
 
-        public int DayNight { get; set; }
+        public string DayNight { get; set; }
 
         public double Price { get; set; }
 
