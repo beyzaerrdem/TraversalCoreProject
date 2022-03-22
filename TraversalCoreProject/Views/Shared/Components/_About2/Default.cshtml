@@ -1,0 +1,19 @@
+﻿@using EntityLayer.Concrete
+@model List<About2>
+
+<section class="w3l-grids1">
+   
+  <div class="hny-three-grids py-5">
+    <div class="container py-lg-5">     
+      <div class="row">
+           @foreach(var item in Model){
+        <div class="col-md-4 col-sm-6 mt-0 grids5-info">
+          <a href="#url"><img src="/Traversal-Starter/assets/images/g1.jpg" class="img-fluid" alt=""></a>
+          <h5>@item.Title</h5>
+          <h4><a href="#url">@item.Title2</a></h4>
+          <p>@item.Description</p>
+        </div>}
+       </div>
+      </div>
+    </div>
+</section>
