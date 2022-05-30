@@ -39,7 +39,8 @@ namespace DataAccessLayer.Repository
         public void Insert(T t)
         {
             using var c = new Context(); 
-            c.Add(t);    
+            c.Add(t);
+            c.SaveChanges();
         }
 
         public void Update(T t)
